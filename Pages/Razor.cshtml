@@ -1,0 +1,48 @@
+﻿@page
+@model MyApp.Namespace.RazorModel
+@{
+    //ViewData is used to store the title of the page
+    ViewData["Title"] = "Razor";
+
+    //An array storing values (courses) of types string. 
+    string[] courses = { 
+        "DT084G - Introduktion till programmering i JavaScript", 
+        "DT057G - Webbutveckling I", 
+        "DT163G - Digital bildbehandling för webb", 
+        "DT068G - Webbanvändbarhet", 
+        "DT093G - Webbutveckling II", 
+        "DT173G - Webbutveckling III", 
+        "DT197G - Webbdesign för CMS", 
+        "DT193G - Fullstack-utveckling med ramverk", 
+        "IK060G - Projektledning", 
+        "DT162G - Javascriptbaserad webbutveckling", 
+        "DT071G - Programmering i C#.NET", 
+        "DT003G - Databaser", 
+        "DT140G - Självständigt arbete" 
+    };
+
+    //A variable storing the current date and time
+    DateTime currentDateAndTime = DateTime.Now;
+    //Convertion of current date and time to string with the format yyy-mm-dd and HH:mm (converts the time to a 24 hour clock)
+    string DateAndTimeForm = currentDateAndTime.ToString("yyyy-MM-dd HH:mm");
+
+    //A boolean value storing true or false depending on if the date stored above is on a monday
+    bool monday = currentDateAndTime.DayOfWeek == DayOfWeek.Monday;
+
+}
+
+<h1 class="display-6">Razor</h1>
+
+<strong>Information</strong>
+<!-- Prints the current date to screen -->
+<p class="mt-3"><strong>Datum/Klockslag: </strong> @DateAndTimeForm.</p> 
+<!-- Checks if the boolean value for "monday" is true, if so "Idag är det måndag" is displayed, if not "Idag är det inte måndag" is displayed.  -->
+@if (monday) { <p class="my-4">Idag är det måndag.</p> } else { <p class="my-4">Idag är det inte måndag.</p> }
+
+<strong>Kurser jag läst: </strong> 
+<ul class="ms-2 mt-3">
+<!-- Loops through the courses stored in the array "courses" and displayes them as a list -->
+    @foreach(var course in courses){
+        <li>@course</li>
+    }
+</ul>

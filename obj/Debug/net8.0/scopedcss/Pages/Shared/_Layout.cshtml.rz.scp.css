@@ -1,0 +1,81 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* ============ HEADER STYLES ============= */
+header[b-yyld45igsj]{
+  border-bottom: solid #1b263b 1px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  header[b-yyld45igsj]{
+    border-bottom: none;
+  }
+}
+
+/* ============ NAVIGATION STYLES ============= */
+nav[b-yyld45igsj]{
+  border: solid #1b263b 1px;
+  height: 100%;
+  padding-top: 2rem !important;
+}
+
+li[b-yyld45igsj]{
+  list-style: none;
+  background-color: #1b263b;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+li:hover[b-yyld45igsj]{
+  background-color: #415a77;
+}
+
+.navbar-toggle[b-yyld45igsj]{
+  background-color: #1b263b;
+}
+
+ul[b-yyld45igsj]{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ============ MAIN STYLES ============= */
+.mainContent[b-yyld45igsj] {
+  padding: 0 18px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+
+/* ============ FOOTER STYLES ============= */
+.footer[b-yyld45igsj] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+
+/* ============ ACCORDION STYLES ============= */
+.accordion[b-yyld45igsj] {
+  background-color: #1b263b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.accordion:hover[b-yyld45igsj] {
+  background-color: #415a77;
+}
+
+.active[b-yyld45igsj]{
+  background-color: #415a77;
+}

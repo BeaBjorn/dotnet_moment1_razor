@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - razorApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/razorApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="container mt-5 mb-3 g-0">
+        <div class="row">
+            <a class="navbar-brand ms-2 ms-sm-0 col" asp-area="" asp-page="/Index">
+                <img width="200" class="logo" src="~/logo_razor.png" alt="razor-logo">
+            </a>
+            <!-- Print todays date to the screen in format yyy-mm-dd -->
+            <p class="col-12 col-md-auto ms-2 text-md-end">Dagens datum: @DateTime.Now.ToString("yyyy-MM-dd")</p>
+        </div>
+        <nav class="navbar navbar-toggle navbar-dark mt-2 d-md-none">
+            <button class="navbar-toggler pt-0 mb-3 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="navbar-toggle">
+                <nav class="col-3 pt-0">
+                    <ul class="nav-mob">
+                        <li class="px-3 py-2 position-relative nav-item">
+                            <a class="text-white text-decoration-none stretched-link nav-link" asp-area="" asp-page="/Index">Hem</a>
+                        </li>
+                        <li class="px-3 py-2 position-relative nav-item">
+                            <a class="text-white text-decoration-none stretched-link nav-link" asp-area="" asp-page="/Razor">Razor</a>
+                        </li>
+                        <li class="px-3 py-2 position-relative nav-item">
+                            <a class="text-white text-decoration-none stretched-link nav-link" asp-area="" asp-page="/InfoPage">Om mig</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <nav class="col-3 p-3 d-none d-md-block">
+                <ul class="nav-desk">
+                    <li class="px-3 py-2 position-relative nav-item">
+                        <a class="text-white text-decoration-none stretched-link nav-link" asp-area="" asp-page="/Index">Hem</a>
+                    </li>
+                    <li class="px-3 py-2 position-relative nav-item">
+                        <a class="text-white text-decoration-none stretched-link nav-link" asp-area="" asp-page="/Razor">Razor</a>
+                    </li>
+                    <li class="px-3 py-2 position-relative nav-item">
+                        <a class="text-white text-decoration-none stretched-link nav-link" asp-area="" asp-page="/InfoPage">Om mig</a>
+                     </li>
+                </ul>
+            </nav>
+
+            <main class="col-12 col-md-8 ms-md-5 g-0 mb-5">
+                <button class="row accordion g-0">
+                    <span class="col">Klicka på mig för att se sidans innehåll.</span>
+                    <span class="col text-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" id="accordionIcon">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="mainContent mb-5">
+                    <div class="py-5">
+                    <!-- RenderBody displays the content of individual pages -->
+                        @RenderBody()
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="text-center">
+           <p>Av Beatrice Björn - <br class="d-md-none" />kontakta mig via e-post: bebj2100@student.miun.se</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/accordion.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
