@@ -4,6 +4,14 @@
     //ViewData is used to store the title of the page
     ViewData["Title"] = "Razor";
 
+    //A variable storing the current date and time
+    DateTime currentDateAndTime = DateTime.Now;
+    //Convertion of current date and time to string with the format yyy-mm-dd and HH:mm (converts the time to a 24 hour clock)
+    string DateAndTimeForm = currentDateAndTime.ToString("yyyy-MM-dd HH:mm");
+
+    //A boolean value storing true or false depending on if the date stored above is on a monday
+    bool monday = currentDateAndTime.DayOfWeek == DayOfWeek.Monday;
+
     //An array storing values (courses) of types string. 
     string[] courses = { 
         "DT084G - Introduktion till programmering i JavaScript", 
@@ -20,14 +28,6 @@
         "DT003G - Databaser", 
         "DT140G - Självständigt arbete" 
     };
-
-    //A variable storing the current date and time
-    DateTime currentDateAndTime = DateTime.Now;
-    //Convertion of current date and time to string with the format yyy-mm-dd and HH:mm (converts the time to a 24 hour clock)
-    string DateAndTimeForm = currentDateAndTime.ToString("yyyy-MM-dd HH:mm");
-
-    //A boolean value storing true or false depending on if the date stored above is on a monday
-    bool monday = currentDateAndTime.DayOfWeek == DayOfWeek.Monday;
 
 }
 

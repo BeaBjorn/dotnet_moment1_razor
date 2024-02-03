@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7JBISW3lfTpWAyjAIW07S+D8tYd99SH7KxDfe3ZVWCQ=",
+  "Hash": "Xf+eFQdfGTIisNBajcKayrD2V/mu9eaqIAzR7slRhoE=",
   "Source": "razorApp",
   "BasePath": "_content/razorApp",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/logo_razor.png"
+    },
+    {
+      "Identity": "/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/wwwroot/mt_taranaki.jpg",
+      "SourceId": "razorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/wwwroot/",
+      "BasePath": "_content/razorApp",
+      "RelativePath": "mt_taranaki.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/mt_taranaki.jpg"
     },
     {
       "Identity": "/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/wwwroot/razor_logo.png",

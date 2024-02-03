@@ -253,6 +253,10 @@
       "PackagePath": "staticwebassets/logo_razor.png"
     },
     {
+      "Id": "/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/wwwroot/mt_taranaki.jpg",
+      "PackagePath": "staticwebassets/mt_taranaki.jpg"
+    },
+    {
       "Id": "/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/wwwroot/razor_logo.png",
       "PackagePath": "staticwebassets/razor_logo.png"
     },

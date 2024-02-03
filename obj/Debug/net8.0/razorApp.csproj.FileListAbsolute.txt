@@ -28,3 +28,4 @@
 /Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/obj/Debug/net8.0/razorApp.pdb
 /Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/obj/Debug/net8.0/razorApp.genruntimeconfig.cache
 /Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/obj/Debug/net8.0/ref/razorApp.dll
+/Users/beatricebjorn/Desktop/year_two/dotnet/moment1/razorApp/obj/Debug/net8.0/razorApp.sourcelink.json
